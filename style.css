@@ -1,0 +1,46 @@
+body {
+  background-color: #162534;
+
+  align-items: center;
+}
+/* main div for the object */
+.wrapper {
+  width: 140px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+}
+
+.loader {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 20px solid #162534;
+  border-top-color: #4eb8ac;
+  border-bottom-color: crimson;
+  animation: rotate 5s linear infinite;
+  border-radius: 50%;
+}
+/* inner circle */
+.inner_loader {
+  border-top-color: blue;
+  border-bottom-color: white;
+  animation-duration: 10s;
+}
+
+/* rotation */
+@keyframes rotate {
+  0% {
+    transform: scale(1) rotate(360deg);
+  }
+  50% {
+    transform: scale(0.8) rotate(-360deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
